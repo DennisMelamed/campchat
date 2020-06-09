@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:chatview="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
+    xmlns:chatview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
 
-              style="@style/Widget.AppCompat.ButtonBar"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center_horizontal"
-              android:orientation="vertical"
-              tools:context="co.intentservice.chatui.sample.MainActivity">
+    style="@style/Widget.AppCompat.ButtonBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    tools:context="co.intentservice.chatui.sample.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="Dongle Status:"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:contentDescription="@string/status_indicator"
+            chatview:srcCompat="@android:drawable/presence_invisible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
 
     <co.intentservice.chatui.ChatView
-            android:id="@+id/chat_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            chatview:backgroundColor="@color/off_white"
-            chatview:bubbleElevation="elevated"
-            chatview:bubbleBackgroundRcv="@color/blue"
-            chatview:bubbleBackgroundSend="@color/white"
-            chatview:inputHint="@string/start_typing"/>
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        chatview:backgroundColor="@color/off_white"
+        chatview:bubbleBackgroundRcv="@color/blue"
+        chatview:bubbleBackgroundSend="@color/white"
+        chatview:bubbleElevation="elevated"
+        chatview:inputHint="@string/start_typing" >
+
+    </co.intentservice.chatui.ChatView>
+
 
 </LinearLayout>

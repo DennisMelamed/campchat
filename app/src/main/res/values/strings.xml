@@ -1,6 +1,7 @@
 <resources>
 
-    <string name="app_name">Android ChatView Sample</string>
+    <string name="app_name">campchat</string>
     <string name="start_typing">Start typing</string>
+    <string name="status_indicator">status_indicator</string>
 
 </resources>

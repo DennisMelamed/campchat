@@ -1,7 +1,7 @@
 package co.intentservice.chatui.fab;
 
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.MotionEvent;
 import android.view.TouchDelegate;
 import android.view.View;
