@@ -12,7 +12,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:orientation="horizontal">
 
         <Space
@@ -22,11 +23,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="26dp"
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dongle Status:"
-            android:textSize="18sp" />
+            android:textSize="18.5sp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -44,12 +45,13 @@
     <co.intentservice.chatui.ChatView
         android:id="@+id/chat_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         chatview:backgroundColor="@color/off_white"
         chatview:bubbleBackgroundRcv="@color/blue"
         chatview:bubbleBackgroundSend="@color/white"
         chatview:bubbleElevation="elevated"
-        chatview:inputHint="@string/start_typing" >
+        chatview:inputHint="@string/start_typing">
 
     </co.intentservice.chatui.ChatView>
 
